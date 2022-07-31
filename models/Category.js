@@ -11,15 +11,15 @@ Category.init(
       // type of data
       type: DataTypes.INTEGER,
       // NOT NULL
-      autoNull: false,
+      allowNull: false,
       // instruct this is primary key
       primaryKey: true,
       // auto increment on
       autoIncrement: true,
     },
-    product_name: {
+    category_name: {
       type: DataTypes.STRING,
-      autoNull: false,
+      allowNull: false,
       validate: {
         isProdName: true,
       },
